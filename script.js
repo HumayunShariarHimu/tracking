@@ -1,0 +1,1 @@
+// javascript is used and is placed in the index.html page
