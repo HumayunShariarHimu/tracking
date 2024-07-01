@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Information Tracking</title>
+<meta name="description" content="Information Tracking">
+<meta name="keywords" content="Information Tracking">
+<meta name="author" content="Humayun Shariar Himu">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Information Tracing" />
+<meta property="og:description" content="Information Tracing" />
+<meta property="og:image" content="https://i.ibb.co/gdk8R6V/location-tracing.jpg" />
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/7XR81RT/location-tracking-favicon.jpg" />
+<link rel="stylesheet" href="information_tracking_style.css">
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Information Tracking</title>
+<meta name="description" content="Information Tracking">  
+<meta name="author" content="Humayun Shahriar Himu">
+<style> 
+        body { 
+        	font-size: 14px;
+        	font-family: georgia;
+        	background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 1.2;
+}
+	span{
+		color:red;
+	}
+</style>
+     
+    </style> 
+<style> 
+        p { 
+        	
+            color: green; 
+        } 
+    </style> 
+    <style> 
+        h3 { 
+        	word-spacing: 200;
+            color: red; 
+        } 
+    </style> 
+    <style> 
+        h4 { 
+        	
+            color: yellow; 
+        } 
+    </style> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+  
+    <script> 
+        /* Add "https://api.ipify.org?format=json" statement 
+           this will communicate with the ipify servers in 
+           order to retrieve the IP address $.getJSON will 
+           load JSON-encoded data from the server using a 
+           GET HTTP request */ 
+  
+        $.getJSON("https://api.ipify.org?format=json", 
+                                          function(data) { 
+  
+            // Setting text of element P with id gfg 
+            $("#gfg").html(data.ip); 
+        }) 
+    </script> 
+<body id="body", onload="getLocation(),getHeaders()">
+	
+<hr/ style="color: lime;">
+<h3>Information Tracking</h3>
+<br>
+<hr/style="color: blue;">
+<nm style="color: white;">BROWSER DETAILS</nm>
+<br><br>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML =
+"<span>App-Name is :</span>" + navigator.appName + "<span>, App-Code-Name is: </span>" + navigator.appCodeName + "<span>, Browser Engine is: </span> " + navigator.product;
+</script>
+
+
+
+<p id="demo33"></p>
+
+<script>
+document.getElementById("demo33").innerHTML =
+"<span>your product sub is: </span> " + navigator.productSub;
+</script>
+
+
+
+<p id="demo333"></p>
+
+<script>
+document.getElementById("demo333").innerHTML =
+"<span>your vendor is: </span> " + navigator.vendor+ "<and> & </and>"+ "<span>your vendor sub is: </span> " + navigator.vendorSub;
+</script>
+
+
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML ="<span>Browser version is: </span> " + navigator.appVersion + "<span>, Browser platform is: </span> " + navigator.platform;
+</script>
+
+
+
+<p id="demo666"></p>
+
+<script>
+document.getElementById("demo666").innerHTML = "<span>Hardware concurrency is: </span> " + navigator.hardwareConcurrency + "<span>, Build ID is: </span> " + navigator.buildID;
+</script>
+
+
+<p id="demo5"></p>
+
+<script>
+document.getElementById("demo5").innerHTML = "<span>your Browser is: </span> " + navigator.userAgent;
+</script>
+
+
+<p id="demo7"></p>
+
+<script>
+document.getElementById("demo7").innerHTML ="<span>your Browser languages are: </span> " + navigator.languages;
+</script>
+
+
+
+
+<p id="demo0"></p>
+<style>
+	p{
+		color:purple;
+		text-transform: uppercase;		
+	}
+</style>
+<style>
+	span{
+		color:orange;
+		text-transform: capitalize;
+	}
+</style>
+<style>
+	and{
+		color:blue;
+		
+	}
+</style>
+<script>
+document.getElementById("demo0").innerHTML =
+"<span>Cookie enabled is: </span>" + navigator.cookieEnabled+"<and> &</and>"+"<span> Java Enabled is: </span>" +navigator.javaEnabled();;
+</script>
+
+
+<p id="demo011"></p>
+<script>
+document.getElementById("demo011").innerHTML =
+"<span>Do not track (1 (ON) & 0 (OFF)): </span>" + navigator.doNotTrack;
+</script>
+
+<hr/style="color: blue;">
+<br>
+<hr/style="color: orange;">
+SCREEN & DEVICE DETAILS
+<p id="demo10"></p>
+<script>
+document.getElementById("demo10").innerHTML ="<span>Screen Width: </span>" + screen.width;
+</script>
+
+<p id="demo11"></p>
+<script>
+document.getElementById("demo11").innerHTML ="<span>Screen Height: </span>" + screen.height;
+</script>
+
+
+
+<b><p id="demo9"></p></b>
+<script>
+document.getElementById("demo9").innerHTML ="<span>Screen Resolution: </span>" + screen.width +"<span> x </span>"+screen.height;
+</script>
+	
+<p id="demo12"></p>
+<script>
+document.getElementById("demo12").innerHTML =" <span>Available Screen Width: </span>" + screen.availWidth;
+</script>
+
+<p id="demo13"></p>
+<script>
+document.getElementById("demo13").innerHTML ="<span> Available Screen Height: </span>" + screen.availHeight;
+</script>
+
+<p id="demo131"></p>
+<script>
+document.getElementById("demo131").innerHTML ="<span> Orientation: </span>" + screen.orientation.type;
+</script>
+
+<p id="demo14"></p>
+<script>
+document.getElementById("demo14").innerHTML ="<span>Screen Color Depth: </span>" + screen.colorDepth+"<and> & </and>"+"<span>Screen Pixel  Depth: </span>" + screen.pixelDepth;
+</script>
+
+<p id="-6"></p>
+
+	<script type="text/javascript">
+		var isMobile = /iPhone|iPad|iPod|Android|Tablet/i.test(navigator.userAgent);
+		var element = document.getElementById('-6');
+		if (isMobile) {
+  			element.innerHTML = "<span>You are using: </span> Mobile";
+		} else {
+			element.innerHTML = "<span>You are using: </span> Desktop";
+		}
+	</script>
+
+<p id="demo66"></p>
+
+<script>
+document.getElementById("demo66").innerHTML = "<span>your oscpu (Operating System | CPU) is: </span> " + navigator.oscpu;
+</script>
+
+<p id="demo78"></p>
+
+<script>
+document.getElementById("demo78").innerHTML = "<span>your device memory is: </span> " + navigator.deviceMemory;
+</script>
+<hr/style="color: orange;">
+<BR>
+<hr/style="color: purple;">
+
+BATTERY STATUS
+<article class="battery-card">
+      <h1 class="battery-title"></h1>
+
+      <div class="battery-box">
+        <strong class="battery-percentage"></strong>
+        <i class="battery"></i>
+      </div>
+
+      <dl class="battery-info">
+        <dt><span>Power Source</span></dt>
+        <dd class="battery-status"><p>---</p></dd>
+
+        <dt><span>Level percentage</span></dt>
+        <dd class="battery-level"><p>---</p></dd>
+
+        <dt><span>Fully charged in</span></dt>
+        <dd class="battery-fully"><p>---</p></dd>
+
+        <dt><span>Remaining time</span></dt>
+        <dd class="battery-remaining"><p>---</p></dd>
+      </dl>
+
+    </article>
+<script type="text/javascript">
+(function() {
+  'use strict';
+
+  var battery;
+
+  function toTime(sec) {
+    sec = parseInt(sec, 10);
+
+    var hours = Math.floor(sec / 3600),
+        minutes = Math.floor((sec - (hours * 3600)) / 60),
+        seconds = sec - (hours * 3600) - (minutes * 60);
+
+    if (hours < 10) { hours   = '0' + hours; }
+    if (minutes < 10) { minutes = '0' + minutes; }
+    if (seconds < 10) { seconds = '0' + seconds; }
+
+    return hours + ':' + minutes;
+  }
+
+  function readBattery(b) {
+    battery = b || battery;
+
+    var percentage = parseFloat((battery.level * 100).toFixed(2)) + '%',
+        fully,
+        remaining;
+
+    if (battery.charging && battery.chargingTime === Infinity) {
+      fully = '<p>Calculating...</p>';
+    } else if (battery.chargingTime !== Infinity) {
+      fully = toTime(battery.chargingTime);
+    } else {
+      fully = '---';
+    }
+
+    if (!battery.charging && battery.dischargingTime === Infinity) {
+      remaining = '<p>Calculating...</p>';
+    } else if (battery.dischargingTime !== Infinity) {
+      remaining = toTime(battery.dischargingTime);
+    } else {
+      remaining = '<p>---<?p>';
+    }
+
+    document.styleSheets[0].insertRule('.battery:before{width:' + percentage + '}', 0);
+    document.querySelector('.battery-percentage').innerHTML = percentage;
+    document.querySelector('.battery-status').innerHTML = battery.charging ? '<p>Adapter (charging)</p>' : '<p>Battery (not charging)</p>';
+    document.querySelector('.battery-level').innerHTML = percentage;
+    document.querySelector('.battery-fully').innerHTML = fully;
+    document.querySelector('.battery-remaining').innerHTML = remaining;
+
+  }
+
+  if (navigator.battery) {
+    readBattery(navigator.battery);
+
+  } else if (navigator.getBattery) {
+    navigator.getBattery().then(readBattery);
+
+  } else {
+    document.querySelector('.not-support').removeAttribute('hidden');
+  }
+
+  window.onload = function () {
+    battery.addEventListener('chargingchange', function() {
+      readBattery();
+    });
+
+    battery.addEventListener("levelchange", function() {
+      readBattery();
+    });
+  };
+}());
+</script>
+<hr/style="color: purple;">
+<br>
+
+<hr/style="color: cyan;">
+
+DATE & TIME 
+
+
+<p>
+
+<script language="JavaScript" type="text/javascript">
+
+now= new Date();
+
+localtime=now.toString();
+
+utctime =now.toUTCString();
+
+document.write("<span>your local time is:</span>" + localtime +"<BR>");
+document.write("<br><span>UTC time (Actual) is:</span>" + utctime);
+
+</script>
+
+</p>
+<hr/style="color: cyan;">
+<br>
+
+<hr/style="color: green;">
+IP ADDRESS
+	
+
+
+        <p><span>Your Public IP Address is:</span>
+        <p id="gfg"></p>  
+
+
+
+
+
+<span>Your Private / Local Machine IP</span><br><br>
+<div id="-9"></div>	
+<style>
+div{
+	color: purple;
+}
+</style>
+<style>
+iv{
+	color: purple;
+}
+</style>
+<script >  
+    var RTCPeerConnection = /*window.RTCPeerConnection ||*/ window.webkitRTCPeerConnection || window.mozRTCPeerConnection;  
+if (RTCPeerConnection)(function() {  
+    var rtc = new RTCPeerConnection({  
+        iceServers: []  
+    });  
+    if (1 || window.mozRTCPeerConnection) {  
+        rtc.createDataChannel('', {  
+            reliable: false  
+        });  
+    };  
+    rtc.onicecandidate = function(evt) {  
+        if (evt.candidate) grepSDP("a=" + evt.candidate.candidate);  
+    };  
+    rtc.createOffer(function(offerDesc) {  
+        grepSDP(offerDesc.sdp);  
+        rtc.setLocalDescription(offerDesc);  
+    }, function(e) {  
+        console.warn("offer failed", e);  
+    });  
+    var addrs = Object.create(null);  
+    addrs["0.0.0.0"] = false;  
+  
+    function updateDisplay(newAddr) {  
+        if (newAddr in addrs) return;  
+        else addrs[newAddr] = true;  
+        var displayAddrs = Object.keys(addrs).filter(function(k) {  
+            return addrs[k];  
+        });  
+        document.getElementById('-9').textContent = displayAddrs.join(" |or perhaps| ") || "n/a";  
+    }  
+  
+    function grepSDP(sdp) {  
+        var hosts = [];  
+        sdp.split('\r\n').forEach(function(line) {  
+            if (~line.indexOf("a=candidate")) {  
+                var parts = line.split(' '),  
+                    addr = parts[4],  
+                    type = parts[7];  
+                if (type === 'host') updateDisplay(addr);  
+            } else if (~line.indexOf("c=")) {  
+                var parts = line.split(' '),  
+                    addr = parts[2];  
+                updateDisplay(addr);  
+            }  
+        });  
+    }  
+})();  
+else {  
+    document.getElementById('list').innerHTML = "<code>ifconfig| grep inet | grep -v inet6 | cut -d\" \" -f2 | tail -n1</code>";  
+    document.getElementById('list').nextSibling.textContent = "In Chrome and Firefox your IP should display automatically, by the power of WebRTCskull.";  
+} 
+</script>
+<hr/style="color: green;">
+<br>
+
+<hr/style="color: blue;">
+YOUR LOCATION<br>
+<style>
+  clk{
+    color: green;
+  }
+</style>
+<note1>Note:</note1> <clk>(Click here)</clk><note> to check your Location (Browser Based).</note>
+<body onclick="getLocation()">
+
+<p id="22"></p>
+
+<script>
+var x = document.getElementById("22");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "<span>Geolocation is not supported by this browser.</span>";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "<span>Latitude: </span>" + position.coords.latitude +"<and> & </and>"+ "<span>Longitude: </span>" + position.coords.longitude; 
+}
+</script>
+<hr/style="color: blue;">
+<br>
+<hr/>
+NETWORK DETAILS<br><br>
+
+<div id="network"></div>
+<script>
+$.get("https://ipinfo.io/json", function (response) {
+    $("#ip").html("<span>IP: </span>" + response.ip);
+    $("#address").html("<span>Location: </span>" + response.city + ", " + response.region);
+    $("#details").html(JSON.stringify(response, null, 4));
+}, "jsonp");
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+  hr, pre{
+    line-height: 1.2;
+    color: red;
+  }
+</style>
+
+<div id="ip"></div>
+<div id="address"></div><br>
+<span>Full response: </span><pre id="details"></pre>
+
+<br>
+<hr/style="color: yellow;">
+<br>
+
+<hr/style="color: blue;">
+VPN OR BAD KNOWN IP
+
+<div id="results">
+      <p id="detection-result"></p>
+      <div>
+        <h4 class="result"></h4>
+        <span id="browser-timezone" class="result"></span>
+        <h4 class="result"></h4>
+        <span id="ip-timezone" class="result"></span>
+        <span id="error-detail" class="error"></span>
+      </div>
+      
+    </div>
+
+<script type="text/javascript">
+      function detectVPN() {
+  var browserTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+
+  return fetch(`https://ipapi.co/json`)
+  .then(function(response) { return response.json() })
+  .then(function (data) { 
+    var ipTimezone = data.timezone
+    console.log(`browser timezone: ${browserTimezone}`, `ip timezone: ${ipTimezone}`)
+    return {
+      browser: browserTimezone,
+      ip: ipTimezone,
+      usingVPN: ipTimezone != browserTimezone
+    }
+  })
+}
+
+detectVPN()
+.then(function(detectionResult) {
+  var body = document.getElementById('body')
+  var result = document.getElementById('detection-result')
+  var details = document.getElementsByClassName('result')
+
+  detectionResult.usingVPN ? result.textContent = "You are using a VPN or Known Bad IP" : result.textContent = "You are not using a VPN or Known Bad IP"
+  detectionResult.usingVPN ? body.style.backgroundColor = 'black' : body.style.backgroundColor = 'black'
+  body.style.color = 'white'
+  
+  document.getElementById("browser-timezone").textContent = detectionResult.browser
+  document.getElementById("ip-timezone").textContent = detectionResult.ip
+  Array.prototype.forEach.call(details, d => d.style.display = 'block')
+})
+.catch(function(err) {
+  var body = document.getElementById('body')
+  var result = document.getElementById('detection-result')
+  var details = document.getElementsByClassName("error")
+  var errorDetail = document.getElementById('error-detail')
+  
+  result.textContent = "There was an error detecting your VPN"
+  errorDetail.textContent = err.message
+  Array.prototype.forEach.call(details, d => d.style.display = 'block')
+})
+    </script>
+    <br>
+<hr/style="color: blue;">
+TOR<br><br>
+<div id="tor-browser-test"></div>
+<script type="text/javascript">
+  function isTorBrowser() {
+    var img = document.createElement("img");
+    // Creates a black 1x1 px image
+    img.src = 'data:image/png;base64,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';
+
+    var canvas = document.createElement("canvas");
+    canvas.width = 1;
+    canvas.height = 1;
+    var ctx = canvas.getContext("2d");
+    var imagedata = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    
+    return imagedata.data[0] == 255 
+                && imagedata.data[1] == 255
+                && imagedata.data[2] == 255
+                && imagedata.data[3] == 255;
+}
+
+document.getElementById('tor-browser-test').innerHTML = isTorBrowser() ? 'Is Tor' : 'Not Tor';
+</script>
+    
+<hr/style="color: blue;">
+<br>
+
+<hr/style="color: orange;">
+LOADING TIME<br><br>
+<script type="text/javascript">  
+     var before_loadtime = new Date().getTime();  
+     window.onload = Pageloadtime;  
+     function Pageloadtime() {  
+         var aftr_loadtime = new Date().getTime();  
+         // Time calculating in seconds  
+         pgloadtime = (aftr_loadtime - before_loadtime) / 1000  
+  
+         document.getElementById("loadtime").innerHTML = "The results are fetched in <font color='purple'><b>" + pgloadtime + "</b></font> Seconds ";  
+     }  
+</script>
+
+<div>  
+<span id="loadtime"></span>
+<br>
+
+
+<hr/style="color: orange;">
+
+
+
+
+
+
+
+			   	</div>   		   		
+
+		   	</div> <!-- /row -->    		  		
+		   </footer>
+
+		</div> <!-- /content-wrap -->
+   
+   </main> <!-- /main-404-content -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="information_tracking_script.js"></script>
+
+</body>
+</html>
